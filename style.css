@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background-color: hsl(30, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
+  font-family: Montserrat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 335px;
+}
+#mobile {
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+#desktop {
+  display: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+h1,
+h2,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  font-family: Fraunces;
+  line-height: 30px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+p {
+  font-size: 14px;
+}
+p,
+h2 {
+  color: hsl(228, 12%, 48%);
+}
+.price {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: hsl(158, 36%, 37%);
+}
+.price span {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  height: 50px;
+  border-radius: 0.5rem;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin-top: 4px;
+}
+.button:hover {
+  background-color: rgb(26, 64, 49);
+}
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    width: 700px;
+    height: 500px;
+  }
+  #desktop {
+    height: 100%;
+    display: block;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+  #mobile {
+    display: none;
+  }
+  .content{
+    height: 100%;
+    box-sizing: border-box;
+    width: auto;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .75rem;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  p{
+    line-height: 25px ;
+  }
+  h1{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  
+}
