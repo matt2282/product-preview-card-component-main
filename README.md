@@ -1,7 +1,7 @@
 # Frontend Mentor - Product preview card component
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
-
+## Live page URL: https://matt2282.github.io/product-preview-card-component-main/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
