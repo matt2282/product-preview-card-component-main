@@ -3,9 +3,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0px;
+
   background-color: hsl(30, 38%, 92%);
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Montserrat;
 }
 
@@ -14,6 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 15px;
+  margin: 0px;
   width: 335px;
 }
 #mobile {
@@ -27,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  height: 100%;
   width: auto;
   background-color: white;
   padding: 1.5rem;
@@ -88,7 +91,7 @@ h2 {
 .button:hover {
   background-color: rgb(26, 64, 49);
 }
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .container {
     flex-direction: row;
     width: 700px;
@@ -103,21 +106,21 @@ h2 {
   #mobile {
     display: none;
   }
-  .content{
+  .content {
     height: 100%;
     box-sizing: border-box;
     width: auto;
     border-bottom-left-radius: 0;
-    border-top-right-radius: .75rem;
+    border-top-right-radius: 0.75rem;
     padding: 2rem;
     justify-content: space-between;
   }
-  p{
-    line-height: 25px ;
+  p {
+    line-height: 25px;
   }
-  h1{
-    font-size: 36px;
-    line-height: 36px;
+  h1 {
+    font-size: 42px;
+    line-height: 42px;
   }
   
 }
